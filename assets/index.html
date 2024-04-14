@@ -10,15 +10,18 @@
     <script src="./script.js" defer></script>
     <title>W. Noticias</title>
 </head>
-<body class="escurecer">
-    <header class="header-mobile"> 
+<body>
+    <header> 
+
         <img src="./images/logo.svg" alt="logo de noticias W.">
         
         <button>
             <img src="./images/icon-menu.svg" alt="icone">
         </button>
+        
+        
 
-        <nav class="abrir">
+        <nav class="mobile">
             <button>
                 <img src="./images/icon-menu-close.svg" alt="icone de x para fechar o menu">
 
@@ -30,11 +33,30 @@
             <a href="#">Trending</a>
             <a href="#">Categorias</a>
         </nav>
+
+        <nav class="desktop">
+
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+
+        </nav>
+        
+
+    
     </header> 
     
     <main>
         <section class="primeira-secao">
-            <img src="./images/image-web-3-mobile.jpg" alt="icone colorido">
+            <picture>
+                <source media="(min-width: 1110px)" srcset="./images/image-web-3-desktop.jpg">
+
+                <img src="./images/image-web-3-mobile.jpg" alt="icone colorido">
+            
+            </picture>
+            
 
             <h1>O futuro brilhante da Web 3.0?</h1>
 
