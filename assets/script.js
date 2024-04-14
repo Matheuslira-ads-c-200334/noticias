@@ -1,8 +1,8 @@
 const botaoAbrir = document.querySelector("header > button")
-const botaoFechar = document.querySelector("header nav button")
+const botaoFechar = document.querySelector("header button")
 
 const body = document.querySelector("body")
-const nav = document.querySelector("header .mobile")
+const nav = document.querySelector("header , mobile")
 
 
 
