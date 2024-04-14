@@ -50,6 +50,7 @@ header button {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 
@@ -67,7 +68,9 @@ header .mobile a {
     line-height: 4rem;
 }
 
-
+header .dekstop {
+    display: none;
+}
 
 
 
@@ -208,6 +211,10 @@ main {
 
 }
 
+.terceira-secao a {
+    text-decoration: none;
+}
+
 .terceira-secao p {
     font-size: 0.9375rem;
     line-height: 1.625rem;
@@ -215,6 +222,34 @@ main {
 }
 
 @media(min-width: 1110px) {
+     header > button {
+        display: none;
+    }
+
+    header .desktop {
+        display: flex;
+        gap: 2.5rem;
+
+    }
+
+    header .desktop a:hover {
+        color:var()
+    }
+
+    header .desktop a {
+        font-size: 0.9375rem;
+        line-height: 1.625rem;
+        text-decoration: none;
+        color: var(--gunmetal)
+
+
+    }
+
+    header .desktop a:hover {
+        color: var(--vermillion);
+    }
+
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -227,6 +262,7 @@ main {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
     }
 
     .primeira-secao picture {
@@ -242,25 +278,22 @@ main {
         font-size: 3.5rem;
     }
 
+    .primeira-secao button:hover {
+        background-color: var(--dark-blue);
+        cursor: pointer;
+    }
+
     .segunda-secao h2 {
         font-size: 2.5rem;
     }
 
-    header > button {
-        display: none;
-    }
-
-    header .desktop {
+    .terceira-secao {
         display: flex;
-        gap: 2.5rem;
-
+        grid-column: 1 / 4;
     }
 
-    header .desktop a {
-        font-size: 0.9375rem;
-        line-height: 1.625rem;
-        text-decoration: none;
-        color: var(--gunmetal)
+    .terceira-secao h2:hover {
+        color: var(--vermillion);
     }
 }
 
